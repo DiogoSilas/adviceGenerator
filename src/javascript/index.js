@@ -1,4 +1,5 @@
 const btnAdvice = document.getElementById('btn-advice');
+const numeroAdvice = document.getElementById('number-advice');
 const adviceDisplay = document.getElementById('advice-display');
 btnAdvice.addEventListener('click', async function() {
     async function obterConselhoAleatorio() {
@@ -12,8 +13,7 @@ btnAdvice.addEventListener('click', async function() {
     }
     try {
         const { numero, conselho } = await obterConselhoAleatorio();
-        adviceDisplay.textContent = conselho;
-        const numeroAdvice = document.getElementById('number-advice');
+        adviceDisplay.textContent = `"${conselho}"`;
         numeroAdvice.textContent = numero;
     } catch (error) {
         console.error('Ocorreu um erro ao buscar o conselho:', error);
