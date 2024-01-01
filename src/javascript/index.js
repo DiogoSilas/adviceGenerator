@@ -22,7 +22,7 @@ btnAdvice.addEventListener('click', async function() {
     }catch(error) {
         console.log('Ocorreu um erro ao buscar o conselho:', error);
     }finally{
-        console.log('Após clicar no botão, é necessário esperar 5 segundos para a API mostrar outro conselho.')
+        console.log('Após clicar no botão, é necessário esperar 2 segundos para a API mostrar outro conselho.')
     }
 });
 
