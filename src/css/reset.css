@@ -3,3 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+a {
+    display: inline-block;
+    color: inherit;
+    text-decoration: inherit;
+}
